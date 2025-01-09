@@ -6,19 +6,19 @@
         align-items: center;
         list-style-type: none;
         .icon {
-            color: #110A33;
+            color:rgb(255, 255, 255);
             width: 30px;
             height: 30px;
         }
         .separatorIcon {
-            color: #110A33;
+            color: #ffffff;
             width: 15px;
             height: 15px;
             margin-left: 5px;
 
         }
         .bcLink {
-            color: #110A33;
+            color: #ffffff;
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
@@ -28,7 +28,7 @@
             text-decoration: underline;
         }
         .bcCurrent {
-            color: #110A33;
+            color: #ffffff;
             font-size: 1rem; 
             font-weight: 600;
             padding-left: 10px;

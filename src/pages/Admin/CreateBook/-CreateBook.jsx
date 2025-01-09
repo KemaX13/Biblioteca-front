@@ -8,8 +8,6 @@ const CreateBook = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [cover, setCover] = useState("");
-  const [price, setPrice] = useState("");
-  const [stock, setStock] = useState("");
   const [isbn, setIsbn] = useState("");
   const [description, setDescription] = useState("");
   const [language, setLanguage] = useState("");
@@ -23,8 +21,6 @@ const CreateBook = () => {
       title: title,
       author: author,
       cover: cover,
-      price: price,
-      stock: stock,
       ISBN: isbn,
       description: description,
       language: language
@@ -60,22 +56,7 @@ const CreateBook = () => {
           onChange={(event) => setCover(event.target.files[0])}  
         />
       </div>
-      <div>
-        <label>Precio</label>
-        <input 
-          type="number"
-          value={ price }
-          onChange={(event) => setPrice(event.target.value)} 
-        />
-      </div>
-      <div>
-        <label>Stock</label>
-        <input 
-          type="number"
-          value={ stock }
-          onChange={(event) => setStock(event.target.value)} 
-        />
-      </div>
+
       <div>
         <label>ISBN</label>
         <input 

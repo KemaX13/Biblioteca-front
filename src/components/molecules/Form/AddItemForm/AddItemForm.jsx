@@ -9,10 +9,7 @@ const AddItemForm = () => {
         title: "",
         author: "",
         cover: "",
-        price: 0,
         isbn: "",
-        stock: 0,
-        language: "",
         synopsis: "",
     };
     const [formData, setFormData] = useState(initialState);
@@ -26,7 +23,6 @@ const AddItemForm = () => {
         if(!formData.title) errors.title = "Title is required";
         if(!formData.author) errors.author = "Author is required";
         if(!formData.synopsis) errors.synopsis = "Synopsis is required";
-        if(formData.price < 0) errors.price = "Price cannot be less than 0";
         if(!/^\d{13}$/.test(formData.isbn)) errors.isbn = "ISBN must be 13 digits long";
 
         if (Object.keys(errors).length > 0 ) {
@@ -85,17 +81,7 @@ const AddItemForm = () => {
                             />
                         </div>
                     </div>
-                    <div className="price-isbn-stock-row">
-                        <div className="price-item">
-                            <label htmlFor="price">Precio</label>
-                            <input
-                                id="price"
-                                name="price"
-                                type="number"
-                                value={formData.price}
-                                onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                            />
-                        </div>
+                    <div>
                         <div className="isbn-item">
                             <label htmlFor="isbn">ISBN</label>
                             <input
@@ -106,33 +92,9 @@ const AddItemForm = () => {
                                 onChange={(e) => setFormData({ ...formData, isbn: e.target.value })}
                             />
                         </div>
-                        <div className="stock-item">
-                            <label htmlFor="stock">Stock</label>
-                            <input
-                                id="stock"
-                                name="stock"
-                                value={formData.stock}
-                                onChange={(e) => setFormData({ ...formData, stock: e.target.value })}
-                                type="number"
-                                min="0"
-                            >
-                            </input>
-                        </div>
+                      
                     </div>
-                    <div className="language-row">
-                        <div className="language-item">
-                            <label htmlFor="language">Idioma</label>
-                            <select
-                                id="language"
-                                name="language"
-                                value={formData.language}
-                                onChange={(e) => setFormData({ ...formData, language: e.target.value })}
-                            >
-                                <option value="spanish">Español</option>
-                                <option value="english">Inglés</option>
-                            </select>
-                        </div>
-                    </div>
+           
                     <div className="synopsis-row">
                         <div className="synopsis-item">
                             <label htmlFor="synopsis">Sinopsis</label>
@@ -159,6 +121,7 @@ const AddItemForm = () => {
                 </form>
             </div>
         </div>
+        
     );
 };
 

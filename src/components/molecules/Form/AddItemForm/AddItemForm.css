@@ -149,7 +149,7 @@
         }
         
         .SaveButton {
-            background-color: #8775E3;
+            background-color: #D91E1E;
             color: white;
             border: none;
             padding: 0.8rem;
@@ -158,7 +158,7 @@
         }
         
         .SaveButton:hover {
-            background-color: #8775E3;
+            background-color: #D91E1E;
         }
         
         .CancelButton {

@@ -1,12 +1,12 @@
 .header {
-    background-color: #AFA8FF;
+    background-color: #B5B5B5;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: calc(100% - 200px);
     height: 80px;
     .btn-logout {
-        background-color: #AFA8FF;
+        background-color: #B5B5B5;
         color: #110A33;
         border: 1px solid #110A33;
         border-radius: 10px;

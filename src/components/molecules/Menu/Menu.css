@@ -1,5 +1,5 @@
 .menu {
-    background-color: #8775E3;
+    background-color: #272727;
     width: 200px;
     height: 100vh;
     display: flex;
@@ -14,7 +14,7 @@
         margin-right: auto;
     }
     .nav {
-        color: #F5F5F5;
+        color: #ffffff;
         text-align: center;
         display: flex;
         flex-direction: column;
