@@ -27,11 +27,9 @@ const Card = ({ product }) => {
             <div className="product-info">
                 <h2 className="product-title">{product.title}</h2>
                 <p className="product-author">{product.author}</p>
-                <div className="product-cover">
-                    <img src={product.cover} alt={product.title} />
-                </div>
-                <p className="product-price">Precio: {product.price} €</p>
-                <p className="product-language">Idioma: {product.language}</p>
+                    <div className="product-cover">
+                        <img src={product.cover} alt={product.title} />
+                    </div>
             </div>
             <Synopsis text={isExpanded ? product.description : `${getSynopsis(product.description)}...`} />
             {!isExpanded && <a href="#" className="read-more-link" onClick={handleReadMore}>Leer más...</a>}

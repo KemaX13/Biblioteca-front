@@ -11,12 +11,10 @@ function Table() {
                 <th>Acción</th>
                 <th>Título</th>
                 <th>Autora</th>
-                <th>Portada</th>
-                <th>Sinopsis</th>
-                <th>Stock</th>
-                <th>Precio</th>
                 <th>ISBN</th>
-                <th>Idioma</th>
+                <th>Description</th>
+                <th>Genero</th>
+                <th>Portada</th>  
             </tr>
         </thead>
         <tbody>
@@ -32,12 +30,10 @@ function Table() {
                 </td>
                 <td>{book.title}</td>
                 <td>{book.author}</td>
-                <td>{book.cover}</td>
+                <td>{book.isbn}</td>
                 <td>{shortenDescription(book.description)}</td>
-                <td>{book.stock}</td>
-                <td>{book.price}</td>
-                <td>{book.ISBN}</td>
-                <td>{book.language}</td>
+                <td>{book.genre}</td>
+                <td>{book.cover}</td>
               </tr>
             ))
           }
