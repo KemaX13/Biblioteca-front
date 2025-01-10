@@ -1,13 +1,20 @@
 .LayoutUser {
     background-color: #FFFFFF;
-    padding-left: 0px;
-    padding-right: 0px;
     min-height: 100vh;
 }
 
 @media (min-width: 768px) {
-    .LayoutUser {
-        padding: 0;
+    .logo {
+        max-width: 47%;
+        display:block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
     }
 }
 
@@ -18,37 +25,26 @@
         .logo {
             margin-left: 2.5em;
             max-height: 180px;
-
-            .tagline {
-                color: #d9d1ff;
-                font-size: 20px;
-                margin-bottom: 1px;
-                line-height: 1.5;
-            }
         }
 
-        @media (min-width: 768px) {
-            .logo {
-                max-width: 47%;
-                display:block;
-            }
-        }
         .menu-mobile {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #FFFB91;
             padding-top: 10px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             z-index: 1000;
+            gap: 10px;
         }
-            .icon-mobile {
-                width: 60px;
-                height: 60px;
-            }
+
+        .icon-mobile {
+            width: 60px;
+            height: 60px;
+        }
+
         .menu-desktop {
             display: none;
             justify-content: space-between;
@@ -58,6 +54,7 @@
             padding: 3px 15px 0px 8px;
             box-sizing: border-box;
             margin-bottom: 6px;
+
             .menu-categories {
                 display: flex;
                 gap: 20px;
@@ -65,22 +62,15 @@
                 margin: 0;
                 padding: 0;
             }
+
             .menu-categories a {
                 color:white;
                 text-decoration: none;
             }
+
             .icon-desktop{
                 width: 40px;
                 height: 40px;
             }
         }
-        @media (min-width: 768px) {
-            .menu-mobile {
-                display: none;
-            }
-            .menu-desktop {
-                display: flex;
-            }
-    }
-
 }
