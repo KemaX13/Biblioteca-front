@@ -1,4 +1,4 @@
-import pic from "../../../assets/logo.png";
+import pic from "../../../assets/logo-back.png";
 
 function Logo({ className }) {
   return (

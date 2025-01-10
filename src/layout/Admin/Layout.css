@@ -21,6 +21,7 @@
 @media screen and (max-width: 768px) {
     .fixed-section {
         display: flex;
+        flex-direction: column;  
         .menu-mobile {
             position: fixed;
             top: 0;
@@ -30,6 +31,8 @@
             position: fixed;
             top: 0;
             right: 0;
+            width: 100%; 
+            z-index: 1000;
         }
     }
     

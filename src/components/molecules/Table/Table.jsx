@@ -9,6 +9,7 @@ function Table() {
         <thead>
             <tr>
                 <th>Acción</th>
+                <th>Id</th>
                 <th>Título</th>
                 <th>Autora</th>
                 <th>ISBN</th>
@@ -28,6 +29,7 @@ function Table() {
                     <FaTrashAlt />
                   </section>
                 </td>
+                <td>{book.id}</td>
                 <td>{book.title}</td>
                 <td>{book.author}</td>
                 <td>{book.isbn}</td>
